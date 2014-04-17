@@ -1,7 +1,7 @@
 To index the sample documents in Elasticsearch, you would run
 
     cd sample-documents
-    for file in `ls -1 *.json`; do echo -n $file; curl -XPOST localhost:9200/es-solr/videos/ -d "`cat $file`"; echo; done
+    for file in *.json; do echo -n $file; curl -XPOST localhost:9200/es-solr/videos/ -d "`cat $file`"; echo; done
 
 To index the sample documents in Solr, you would run
 
