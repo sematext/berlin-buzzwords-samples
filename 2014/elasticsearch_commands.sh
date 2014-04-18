@@ -2,7 +2,7 @@ echo
 echo =================
 echo "download"
 echo =================
-#wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.0.tar.gz
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.0.tar.gz
 
 echo
 echo =================
@@ -94,20 +94,18 @@ curl 'localhost:9200/es-solr/videos/_search?q=elasticsearch&pretty'
 curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
     "query": {
         "bool": {
-            "must": {
-                "match": {
-                    "title": {
-                         "query": "elsticsearch",
-                         "fuzziness": "AUTO"
+            "should": [
+                {
+                    "match": {
+                        "title": "elasticsearch"
+                    }
+                },
+                {
+                    "term": {
+                        "tags": "logs"
                     }
                 }
-            },
-            "should": {
-                "match": {
-                    "tags": "logs"
-                }
-            },
-            "minimum_should_match": 0
+            ]
         }
     }
 }'

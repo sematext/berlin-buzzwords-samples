@@ -6,5 +6,5 @@
   "upload_date": "2013-12-11",
   "views": 480,
   "likes": 9,
-  "tags": ["solr", "solrcloud", "logs", "logstash", "rsyslog", "flume", "peformance"]
+  "tags": ["solr", "logs", "logstash", "rsyslog", "flume", "peformance"]
 }
