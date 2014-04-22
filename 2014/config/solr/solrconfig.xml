@@ -76,7 +76,7 @@
     <lst name="defaults">
       <str name="echoParams">explicit</str>
       <int name="rows">10</int>
-      <str name="df">title</str>
+      <str name="df">all</str>
     </lst>  
   </requestHandler>
 
@@ -89,11 +89,25 @@
   </requestHandler>
 
   <requestHandler name="/update" class="solr.UpdateRequestHandler">
+    <lst name="defaults">
+      <str name="update.chain">dateParse</str>
+    </lst>
   </requestHandler>
-
+  
+  <updateRequestProcessorChain name="dateParse">
+    <processor class="solr.ParseDateFieldUpdateProcessorFactory">
+      <arr name="format">
+        <str>yyyy-MM-dd</str>
+      </arr>
+    </processor>
+    <processor class="solr.LogUpdateProcessorFactory" />
+    <processor class="solr.RunUpdateProcessorFactory" />
+  </updateRequestProcessorChain>
+  
   <requestHandler name="/update/json" class="solr.UpdateRequestHandler">
     <lst name="defaults">
       <str name="stream.contentType">application/json</str>
+      <str name="update.chain">dateParse</str>
     </lst>
   </requestHandler>
   

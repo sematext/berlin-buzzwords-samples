@@ -5,13 +5,23 @@
    <field name="url" type="string" indexed="true" stored="true"/> 
    <field name="title" type="text_general" indexed="true" stored="true"/> 
    <field name="uploaded_by" type="string" indexed="true" stored="true"/> 
-   <field name="upload_date" type="string" indexed="true" stored="true"/>     
+   <field name="upload_date" type="date" indexed="true" stored="true"/>     
    <field name="views" type="int" indexed="true" stored="true"/> 
    <field name="likes" type="int" indexed="true" stored="true"/> 
    <field name="tags" type="string" indexed="true" stored="true" multiValued="true"/> 
+   <field name="all" type="text_general" indexed="true" stored="true" multiValued="true"/>
    
    <field name="_version_" type="long" indexed="true" stored="true"/>
  </fields>
+
+ <copyField source="id" dest="all" />
+ <copyField source="url" dest="all" />
+ <copyField source="title" dest="all" />
+ <copyField source="uploaded_by" dest="all" />
+ <copyField source="upload_date" dest="all" />
+ <copyField source="views" dest="all" />
+ <copyField source="likes" dest="all" />
+ <copyField source="tags" dest="all" />
 
  <uniqueKey>id</uniqueKey>
  
