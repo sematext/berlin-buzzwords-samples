@@ -144,6 +144,8 @@ echo =================
 curl 'http://localhost:8983/solr/zookeeper?wt=json&dump=true'
 # get only cluster state
 curl 'http://localhost:8983/solr/zookeeper?wt=json&detail=true&path=%2Fclusterstate.json'
+# get cluster status
+curl 'http://localhost:8983/solr/admin/collections?action=CLUSTERSTATUS'
 
 # REST stats can be found in JMX Mbeans
 # Check jconsole provided with JVM
