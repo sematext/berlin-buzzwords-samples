@@ -27,7 +27,7 @@ echo =================
 cd ../sample-documents
 for file in *.json; do
   echo -n $file
-  curl -XPOST localhost:9200/es-solr/videos/ -d "`cat $file`"
+  curl -XPOST localhost:9200/bbuzz/videos/ -d "`cat $file`"
   echo
 done
 
@@ -35,15 +35,15 @@ echo
 echo =================
 echo "get mapping"
 echo =================
-curl localhost:9200/es-solr/videos/_mapping?pretty
+curl localhost:9200/bbuzz/videos/_mapping?pretty
 
 echo
 echo =================
 echo "update mapping and reindex"
 echo =================
-curl -XDELETE localhost:9200/es-solr
-curl -XPUT localhost:9200/es-solr/
-curl -XPUT localhost:9200/es-solr/videos/_mapping -d '{
+curl -XDELETE localhost:9200/bbuzz
+curl -XPUT localhost:9200/bbuzz/
+curl -XPUT localhost:9200/bbuzz/videos/_mapping -d '{
     "videos": {
         "_id": {
             "path": "id"
@@ -80,18 +80,18 @@ curl -XPUT localhost:9200/es-solr/videos/_mapping -d '{
 }'
 for file in *.json; do
   echo -n $file
-  curl -XPOST localhost:9200/es-solr/videos/ -d "`cat $file`"
+  curl -XPOST localhost:9200/bbuzz/videos/ -d "`cat $file`"
   echo
 done
-curl -XPOST localhost:9200/es-solr/_refresh
+curl -XPOST localhost:9200/bbuzz/_refresh
 
 echo
 echo =================
 echo "URI search"
 echo =================
-curl 'localhost:9200/es-solr/videos/_search?q=elasticsearch&pretty'
+curl 'localhost:9200/bbuzz/videos/_search?q=elasticsearch&pretty'
 
-curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
+curl 'localhost:9200/bbuzz/videos/_search?pretty' -d '{
     "query": {
         "bool": {
             "should": [
@@ -110,7 +110,7 @@ curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
     }
 }'
 
-curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
+curl 'localhost:9200/bbuzz/videos/_search?pretty' -d '{
     "query": {
         "function_score": {
             "query": {
@@ -138,14 +138,14 @@ echo
 echo =================
 echo "Percolate"
 echo =================
-curl -XPUT 'localhost:9200/es-solr/.percolator/1' -d '{
+curl -XPUT 'localhost:9200/bbuzz/.percolator/1' -d '{
     "query" : {
         "term" : {
             "tags" : "elasticsearch"
         }
     }
 }'
-curl -XGET 'localhost:9200/es-solr/videos/_percolate?pretty' -d '{
+curl -XGET 'localhost:9200/bbuzz/videos/_percolate?pretty' -d '{
     "doc": {
         "id": "12",
         "url": "http://vimeo.com/44718089",
@@ -161,7 +161,7 @@ echo
 echo =================
 echo "Aggregations"
 echo =================
-curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
+curl 'localhost:9200/bbuzz/videos/_search?pretty' -d '{
     "size": 0,
     "aggregations" : {
         "tags" : {
@@ -170,7 +170,7 @@ curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
     }
 }'
 
-curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
+curl 'localhost:9200/bbuzz/videos/_search?pretty' -d '{
     "size": 0,
     "aggregations": {
         "uploader_count": {
@@ -182,7 +182,7 @@ curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
     }
 }'
 
-curl 'localhost:9200/es-solr/videos/_search?pretty' -d '{
+curl 'localhost:9200/bbuzz/videos/_search?pretty' -d '{
     "size": 0,
     "aggregations" : {
         "tags" : {
