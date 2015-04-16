@@ -1,0 +1,28 @@
+module(load="imfile")
+module(load="omelasticsearch")
+
+input(type="imfile"
+      File="/opt/example.log.parsed"
+      Tag="tag1"
+      stateFile="/tmp/rsyslog-state")
+
+main_queue(
+  queue.size="100000"   # capacity of the main queue
+  queue.dequeuebatchsize="1000"  # process messages in batches of 1000 and move them to the action queues
+  queue.workerthreads="4"  # 4 threads for the main queue
+)
+
+template(name="json"
+         type="list") {
+             property(name="msg")
+         }
+
+
+action(name="send-to-es"
+      type="omelasticsearch"
+      template="json"  # use the template defined earlier
+      searchIndex="test-index"
+      searchType="test-type"
+      bulkmode="on"                   # use the Bulk API
+      action.resumeretrycount="-1"  # retry indefinitely if ES is unreachable
+)
