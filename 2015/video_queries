@@ -1,0 +1,12 @@
+curl localhost:9200/bbuzz/_search?pretty -d '{
+  "query": {
+    "multi_match": {
+      "query": "elasticsearch solr",
+      "fields": ["tags^5", "uploaded_by^3", "title"],
+      "tie_breaker": 0.3
+    }
+  },
+  "fields": "title"
+}'
+
+curl 'localhost:8983/solr/bbuzz/select?defType=edismax&q=elasticsearch%20solr%22&qf=tags^5%20uploaded_by^3%20title&tie=0.3&fl=title&rows=10&indent=on'
