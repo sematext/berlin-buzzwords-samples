@@ -1,0 +1,12 @@
+curl localhost:9200/wiki/_search?pretty -d '{
+  "query": {
+    "multi_match": {
+      "query": "enciclopedia",
+      "fields": ["text^2", "text_es", "title^5", "title_es^3"],
+      "tie_breaker": 0.3
+    }
+  },
+  "fields": "title"
+}'
+
+curl 'localhost:8983/solr/wiki/select?defType=edismax&q=enciclopedia%22&qf=%22text^2%20text_es%20title^5%20title_es3%22&tie=0.3&fl=title&rows=10&indent=on'
