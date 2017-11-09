@@ -1,0 +1,10 @@
+{
+  "id": "35",
+  "url": "https://www.youtube.com/watch?v=1gzwAgrk47c",
+  "title": "Tuning Solr and its Pipeline for Logs - Radu Gheorghe & Rafał Kuć, Sematext",
+  "uploaded_by": "Lucidworks",
+  "upload_date": "2016-11-03",
+  "views": 263,
+  "likes": 5,
+  "tags": ["logging", "solr", "tuning", "rsyslog", "logstash", "kafka"]
+}
