@@ -1,0 +1,75 @@
+POST videosearch/_bulk
+{"index":{}}
+{"id":"1","url":"https://www.youtube.com/watch?v=I06NWbtj4nQ","title":"Search Analytics: Business Value & BigData NoSQL Backend, Otis Gospodnetic","uploaded_by":"LuceneSolrRevolution","upload_date":"2014-10-24","views":70,"tags":["business value","big data","search analytics"]}
+{"index":{}}
+{"id":"10","url":"https://www.youtube.com/watch?v=yDLtyLi6Ny8","title":"#bbuzz: Radu Gheorghe JSON Logging with Elasticsearch","uploaded_by":"newthinking communications","upload_date":"2013-06-19","views":370,"likes":0,"tags":["elasticsearch","logs","logstash","rsyslog","json"]}
+{"index":{}}
+{"id":"11","url":"https://www.youtube.com/watch?v=Cgd4gm5y1Ig","title":"Indexing and Searching Logs with Elasticsearch or Solr by Radu Gheorghe","uploaded_by":"Hakka Labs (formerly g33ktalk)","upload_date":"2014-02-24","views":350,"likes":0,"tags":["elasticsearch","solr","logs","performance","logstash","rsyslog","flume"]}
+{"index":{}}
+{"id":"12","url":"http://vimeo.com/44718089","title":"Rafał Kuć - Scaling Massive ElasticSearch Clusters","uploaded_by":"newthinking","upload_date":"2012-06-26","tags":["elasticsearch","scaling","routing","sharding","caching","monitoring"]}
+{"index":{}}
+{"id":"13","url":"https://www.youtube.com/watch?v=LA-rbmuSROM","title":"Rafał Kuć & Radu Gheorghe at #bbuzz 2014: Side by Side with Elasticsearch and Solr","uploaded_by":"newthinking communications","upload_date":"2014-05-28","views":668,"likes":3,"tags":["big data","solr","elasticsearch"]}
+{"index":{}}
+{"id":"14","url":"https://www.youtube.com/watch?v=H53w9cXVTAM","title":"Solr Anti-Patterns, by Rafał Kuć","uploaded_by":"Lucidworks","upload_date":"2015-01-07","views":380,"likes":1,"tags":["big data","solr","patterns"]}
+{"index":{}}
+{"id":"15","url":"https://www.youtube.com/watch?v=4L1DjY90Whk","title":"Tuning Solr for Logs, by Radu Gheorghe","uploaded_by":"Lucidworks","upload_date":"2015-01-07","views":280,"likes":2,"tags":["logging","solr","tuning","performance"]}
+{"index":{}}
+{"id":"16","url":"https://www.youtube.com/watch?v=GKvyt4z5dE0","title":"DevOpsDays Warsaw 2014 - Rafał Kuć","uploaded_by":"DevOpsDays Warsaw","upload_date":"2014-10-03","views":502,"likes":2,"tags":["logging","elasticsearch","logstash","tutorial"]}
+{"index":{}}
+{"id":"17","url":"https://www.youtube.com/watch?list=PLT_fd32OFYpces5Rt77x1wAcJTyMkncZ_&v=sTu4ez4Qwks","title":"Analyzing logs with Elasticsearch","uploaded_by":"Ciprian Hacman","upload_date":"2015-06-19","views":52,"likes":2,"tags":["logging","elasticsearch","kibana","tutorial","introduction"]}
+{"index":{}}
+{"id":"18","url":"https://www.youtube.com/watch?v=01mXpZ0F-_o","title":"#bbuzz 2015: Radu Gheorghe & Rafał Kuć – Side by Side with Elasticsearch & Solr part 2","uploaded_by":"newthinking communications","upload_date":"2015-06-04","views":308,"likes":5,"tags":["elasticsearch","solr","comparison"]}
+{"index":{}}
+{"id":"19","url":"https://www.youtube.com/watch?v=hFI3N4a3McU","title":"Solr on Docker: The Good, the Bad and the Ugly","uploaded_by":"Sematext","upload_date":"2017-10-11","views":44,"likes":1,"tags":["solr","docker","tradeoffs"]}
+{"index":{}}
+{"id":"2","url":"https://www.youtube.com/watch?v=6QX5hXf_e7c","title":"Introduction to Elasticsearch by Radu","uploaded_by":"Hakka Labs (formerly g33ktalk)","upload_date":"2013-11-22","views":850,"likes":2,"tags":["elasticsearch","introduction","demo"]}
+{"index":{}}
+{"id":"20","url":"https://www.youtube.com/watch?v=42vw3KxWnfg","title":"How to Run Solr on Docker. And Why. - Rafał Kuć & Radu Gheorghe, Sematext","uploaded_by":"Lucidworks","upload_date":"2016-11-07","views":1356,"likes":6,"tags":["solr","docker","tutorial"]}
+{"index":{}}
+{"id":"21","url":"https://www.youtube.com/watch?v=NM2dyQ3bc2w","title":"Solr: Optimize Is Not Bad For You Deep Dive Into The Segment Merge Abyss","uploaded_by":"Sematext","upload_date":"2017-10-11","views":49,"likes":1,"tags":["solr","merge","segments"]}
+{"index":{}}
+{"id":"22","url":"https://www.youtube.com/watch?v=fY-j6g_oTmA","title":"Introducing Sematext Cloud","uploaded_by":"Sematext","upload_date":"2017-05-16","views":7940,"likes":13,"tags":["logging","monitoring","sematext"]}
+{"index":{}}
+{"id":"23","url":"https://www.youtube.com/watch?v=44QQEI9CJQQ","title":"Elasticsearch for logs and metrics: A deep dive – Velocity 2016, O’REILLY CONFERENCES","uploaded_by":"Sematext","upload_date":"2017-02-27","views":1096,"likes":8,"tags":["logging","monitoring","elasticsearch","deep dive"]}
+{"index":{}}
+{"id":"24","url":"https://www.youtube.com/watch?v=ad3T6VLLOz4","title":"Network Maps for Infrastructure Discovery","uploaded_by":"Sematext","upload_date":"2016-01-06","views":551,"likes":1,"tags":["network","monitoring","sematext","SPM"]}
+{"index":{}}
+{"id":"25","url":"https://www.youtube.com/watch?v=BIERrXzbiNM","title":"MongoDB Metrics","uploaded_by":"Sematext","upload_date":"2015-12-16","views":830,"likes":2,"tags":["mongo","monitoring","sematext","SPM"]}
+{"index":{}}
+{"id":"26","url":"https://www.youtube.com/watch?v=cLKnn1Qbxlc","title":"Log Management for Docker","uploaded_by":"Sematext","upload_date":"2015-12-14","views":4639,"likes":11,"tags":["docker","logging","sematext","logsene"]}
+{"index":{}}
+{"id":"27","url":"https://www.youtube.com/watch?v=CG7lI5ZUdag","title":"How to use Grafana with Logsene","uploaded_by":"Sematext","upload_date":"2015-11-26","views":5830,"likes":2,"tags":["grafana","logging","sematext","logsene","elasticsearch"]}
+{"index":{}}
+{"id":"28","url":"https://www.youtube.com/watch?v=R2aIG2DnFRI","title":"Correlating Logs and Metrics","uploaded_by":"Sematext","upload_date":"2015-11-24","views":675,"likes":3,"tags":["correlation","logging","monitoring","sematext","logsene","SPM"]}
+{"index":{}}
+{"id":"29","url":"https://www.youtube.com/watch?v=dkauUMimEgc","title":"Log Analysis with Elasticsearch","uploaded_by":"Sematext","upload_date":"2015-11-12","views":3453,"likes":10,"tags":["logging","elasticsearch","tutorial","O'Reilly","Velocity"]}
+{"index":{}}
+{"id":"3","url":"http://vimeo.com/75665562","title":"Monitorama EU 2013 - Radu Gheorghe","uploaded_by":"Monitorama","upload_date":"2013-11-10","tags":["elasticsearch","logging","performance","logstash","syslog"]}
+{"index":{}}
+{"id":"30","url":"https://www.youtube.com/watch?v=SNzEE1weVUg","title":"Logsene Live Tail","uploaded_by":"Sematext","upload_date":"2015-11-10","views":541,"likes":1,"tags":["logging","logsene","sematext","live tail","tutorial"]}
+{"index":{}}
+{"id":"31","url":"https://www.youtube.com/watch?v=eoZJmAJKuaQ","title":"Introducing Top Database Operations","uploaded_by":"Sematext","upload_date":"2015-11-09","views":633,"likes":3,"tags":["database","transactions","sematext"]}
+{"index":{}}
+{"id":"32","url":"https://www.youtube.com/watch?v=8L-3hkfo0nE","title":"Docker Logging Webinar from Sematext","uploaded_by":"Sematext","upload_date":"2015-10-05","views":771,"likes":3,"tags":["docker","logging","sematext","webinar"]}
+{"index":{}}
+{"id":"33","url":"https://www.youtube.com/watch?v=UwAqELwoi9c","title":"Docker Monitoring Webinar presented by Sematext","uploaded_by":"Sematext","upload_date":"2015-09-18","views":758,"likes":1,"tags":["docker","monitoring","sematext","webinar"]}
+{"index":{}}
+{"id":"34","url":"https://www.youtube.com/watch?v=TPJ5e0ibc9s","title":"Large Scale Log Analytics with Solr","uploaded_by":"Lucidworks","upload_date":"2015-11-02","views":721,"likes":2,"tags":["logging","solr","tutorial","rsyslog","logstash"]}
+{"index":{}}
+{"id":"35","url":"https://www.youtube.com/watch?v=1gzwAgrk47c","title":"Tuning Solr and its Pipeline for Logs - Radu Gheorghe & Rafał Kuć, Sematext","uploaded_by":"Lucidworks","upload_date":"2016-11-03","views":263,"likes":5,"tags":["logging","solr","tuning","rsyslog","logstash","kafka"]}
+{"index":{}}
+{"id":"36","url":"https://www.youtube.com/watch?v=cI-3mEUW_F4","title":"Running High Performance And Fault Tolerant Elasticsearch Clusters On Docker – Rafał Kuć","uploaded_by":"PROIDEA Events","upload_date":"2016-01-20","views":2781,"likes":20,"tags":["docker","elasticsearch","tutorial","best practices"]}
+{"index":{}}
+{"id":"37","url":"https://www.youtube.com/watch?v=D2zR-6Tke8o","title":"#bbuzz 2016: Rafał Kuć - Running High Performance And Fault Tolerant Elasticsearch","uploaded_by":"newthinking communcations","upload_date":"2016-06-11","views":719,"likes":4,"tags":["docker","elasticsearch","tutorial","best practices"]}
+{"index":{}}
+{"id":"4","url":"https://www.youtube.com/watch?v=IutoHcJT61k","title":"#bbuzz: Rafał Kuć: Battle of the Giants: Solr vs ElasticSearch, Round 2","uploaded_by":"newthinking communications","upload_date":"2013-06-19","views":380,"likes":1,"tags":["elasticsearch","solr","lucene","comparison"]}
+{"index":{}}
+{"id":"5","url":"https://www.youtube.com/watch?v=PwJNFHRDpVQ","title":"Understanding & Visualising Solr EXPLAIN Information, Rafal Kuc","uploaded_by":"LuceneSolrRevolution","upload_date":"2013-11-09","views":52,"likes":7,"tags":["solr","lucene","explain"]}
+{"index":{}}
+{"id":"6","url":"https://www.youtube.com/watch?v=4VaRSDBhQ9s","title":"Scaling Solr with SolrCloud , Rafal Kuć, Sematext","uploaded_by":"LuceneSolrRevolution","upload_date":"2013-11-28","views":360,"likes":10,"tags":["solr","scaling"]}
+{"index":{}}
+{"id":"7","url":"https://www.youtube.com/watch?v=II-0o5BWgJk","title":"Solr for Analytics: Metrics Aggregations at Sematext Otis Gospodnetić","uploaded_by":"LuceneSolrRevolution","upload_date":"2013-12-13","views":230,"likes":5,"tags":["solr","analytics","metrics","aggregations"]}
+{"index":{}}
+{"id":"8","url":"https://www.youtube.com/watch?v=mkt3f-lgizQ","title":"Battle of the giants: Apache Solr 4.0 vs ElasticSearch","uploaded_by":"LuceneSolrRevolution","upload_date":"2013-01-31","views":7033,"likes":20,"tags":["solr","elasticsearch","comparison"]}
+{"index":{}}
+{"id":"9","url":"https://www.youtube.com/watch?v=_QoSsfn1Fk0","title":"Using Solr to Search and Analyze Logs, Radu Gheorghe","uploaded_by":"LuceneSolrRevolution","upload_date":"2013-12-11","views":480,"likes":9,"tags":["solr","logs","logstash","rsyslog","flume","peformance"]}
