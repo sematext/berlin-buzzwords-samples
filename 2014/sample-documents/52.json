@@ -1,0 +1,10 @@
+{
+  "id": "52",
+  "url": "https://www.youtube.com/watch?v=UCuJNzSYesw",
+  "title": "Use Kubernetes to Manage OpenSearch Clusters for Logging | Sematext at Kubecon 2022",
+  "uploaded_by": "Kubecon",
+  "upload_date": "2022-06-18",
+  "views": 312,
+  "likes": 14,
+  "tags": ["opensearch", "kubernetes", "autoscaling", "logs"]
+}
